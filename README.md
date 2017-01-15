@@ -23,12 +23,12 @@ The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
- Video Walkthrough 
+## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/tQTIBXu.gif' title='Tip Calculator Demo' width='' alt='Tip Calculator Demo' />
-http://i.imgur.com/tQTIBXu.gif
+
 
 
 
