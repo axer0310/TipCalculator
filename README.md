@@ -4,16 +4,16 @@
 
 Submitted by: **Kuan-Ting Wu (a.k.a Arthur Wu)**
 
-Time spent: **1** hour spent in total
+Time spent: **2** hour spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ o] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [X] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
-* [ ] Settings page to change the default tip percentage.
+* [X] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/tQTIBXu.gif' title='Tip Calculator Demo' width='' alt='Tip Calculator Demo' />
+<img src='http://i.imgur.com/fnXfeJR.gif' title='Tip Calculator Demo' width='' alt='Tip Calculator Demo' />
 
 
 
@@ -35,10 +35,7 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-
-Describe any challenges encountered while building the app.
-
-
+Ver 1.1 : added settings menu and able to set the default tip percentage.
 ## License
 
     Copyright [2017] [Kuan-Ting Wu (a.k.a Arthur Wu)]
