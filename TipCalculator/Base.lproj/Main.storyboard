@@ -86,7 +86,13 @@
                             <outletCollection property="gestureRecognizers" destination="7Wc-lB-tYk" appends="YES" id="Smw-b1-sJW"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="bGe-dm-S7R"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="bGe-dm-S7R">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="D8e-NR-rr7">
+                            <connections>
+                                <segue destination="8UC-xE-x7E" kind="push" id="CYK-ED-lD7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="nbw-FQ-r5z" id="4dp-Ch-nZ2"/>
                         <outlet property="tipControl" destination="ucA-Aj-6Pj" id="pLs-Rs-wbk"/>
@@ -102,6 +108,89 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="537.5" y="154.5"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="0m3-04-UX1">
+            <objects>
+                <viewController id="8UC-xE-x7E" customClass="SettingsViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wxZ-yS-L0f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="Y2D-Fb-VXu">
+                                <rect key="frame" x="0.0" y="304" width="375" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nFJ-CH-CFe">
+                                        <rect key="frame" x="0.0" y="-6" width="375" height="204"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="20%">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="setSecondPercentAsDefult:" destination="8UC-xE-x7E" eventType="touchDown" id="9Tx-21-fVi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.52652452235832503" green="0.95164750647668395" blue="0.74267777509370569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="Kow-1q-qeS">
+                                <rect key="frame" x="0.0" y="494" width="375" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fcd-Jc-2Hd">
+                                        <rect key="frame" x="0.0" y="-11" width="375" height="195"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="25%">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="setThirdPercentAsDefult:" destination="8UC-xE-x7E" eventType="touchDown" id="Bo8-YO-Mqn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95164750649999996" green="0.87762135362595595" blue="0.63650711047062314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="Di4-7E-Ifr">
+                                <rect key="frame" x="0.0" y="123" width="375" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ahZ-Yk-riS">
+                                        <rect key="frame" x="0.0" y="-9" width="375" height="201"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="18%">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="setFirstPercentAsDefult:" destination="8UC-xE-x7E" eventType="touchDown" id="udH-Km-gO9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40283743633824087" green="0.67225115097724364" blue="0.95164750647668395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Default Tip Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fjq-hH-NER">
+                                <rect key="frame" x="56" y="70" width="263" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iav-xg-dyM"/>
+                    <connections>
+                        <outlet property="firstPercentButton" destination="ahZ-Yk-riS" id="NXt-Da-pwt"/>
+                        <outlet property="secondPercentButton" destination="nFJ-CH-CFe" id="lVU-BZ-OLu"/>
+                        <outlet property="thirdPercentButton" destination="Fcd-Jc-2Hd" id="Eto-iR-asQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHn-9c-lOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018.5" y="154.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9YI-MS-e8u">
