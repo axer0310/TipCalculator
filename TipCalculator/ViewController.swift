@@ -49,7 +49,8 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("view will appear")
-        tipControl.selectedSegmentIndex = defaults.integer(forKey: "percent");        // This is a good place to retrieve the default tip percentage from UserDefaults
+        tipControl.selectedSegmentIndex = defaults.integer(forKey: "percent");
+        calTip(view);// This is a good place to retrieve the default tip percentage from UserDefaults
         // and use it to update the tip amount
     }
     
