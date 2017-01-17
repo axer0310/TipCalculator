@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     let defaults = UserDefaults.standard
 
     var tipControl = 0
-
     
     @IBOutlet var first: UIButton!
     @IBOutlet var second: UIButton!
@@ -30,6 +29,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        billField.becomeFirstResponder()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -127,6 +127,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         print("view will appear")
         tipControl = defaults.integer(forKey: "percent");
+    
         calTip(view);
         
 
@@ -160,9 +161,12 @@ class ViewController: UIViewController {
     
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool)
+    {
         super.viewWillDisappear(animated)
         print("view will disappear")
+        defaults.set(billField.text, forKey: "bill")
+        defaults.synchronize();
     }
     
     override func viewDidDisappear(_ animated: Bool) {
