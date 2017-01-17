@@ -4,7 +4,7 @@
 
 Submitted by: **Kuan-Ting Wu (a.k.a Arthur Wu)**
 
-Time spent: **2** hour spent in total
+Time spent: **4** hour spent in total
 
 ## User Stories
 
@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/fnXfeJR.gif' title='Tip Calculator Demo' width='' alt='Tip Calculator Demo' />
+<img src='http://i.imgur.com/I8UBQck.gif' title='Tip Calculator Demo' width='' alt='Tip Calculator Demo' />
 
 
 
