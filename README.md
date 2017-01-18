@@ -17,7 +17,7 @@ The following **optional** features are implemented:
 * [X] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
-* [X ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [X] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
@@ -36,7 +36,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 -Ver 1.3 : Improve main menu UI and added animation to percentage button bar
+
 -Ver 1.2 : Redesign main  menu and percentige selection method
+
 -Ver 1.1 : added settings menu and able to set the default tip percentage.
 
 Special thanks Penny Wu & Kitty Wang for giving opinions on UI 
