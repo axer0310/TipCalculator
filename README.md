@@ -4,7 +4,7 @@
 
 Submitted by: **Kuan-Ting Wu (a.k.a Arthur Wu)**
 
-Time spent: **4** hour spent in total
+Time spent: **5** hour spent in total
 
 ## User Stories
 
