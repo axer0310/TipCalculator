@@ -35,9 +35,9 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-# Ver 1.3 : Improve main menu UI and added animation to percentage button bar
-# Ver 1.2 : Redesign main  menu and percentige selection method
-# Ver 1.1 : added settings menu and able to set the default tip percentage.
+-Ver 1.3 : Improve main menu UI and added animation to percentage button bar
+-Ver 1.2 : Redesign main  menu and percentige selection method
+-Ver 1.1 : added settings menu and able to set the default tip percentage.
 
 Special thanks Penny Wu & Kitty Wang for giving opinions on UI 
 ## License
