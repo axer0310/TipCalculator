@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/I8UBQck.gif' title='Tip Calculator Demo' width='' alt='Tip Calculator Demo' />
+<img src='http://i.imgur.com/tjS4tJe.gif' title='Tip Calculator Demo' width='' alt='Tip Calculator Demo' />
 
 
 
@@ -35,8 +35,11 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
+Ver 1.3 : Improve main menu UI and added animation to percentage button bar
 Ver 1.2 : Redesign main  menu and percentige selection method
 Ver 1.1 : added settings menu and able to set the default tip percentage.
+
+Special thanks Penny Wu & Kitty Wang for giving opinions on UI 
 ## License
 
     Copyright [2017] [Kuan-Ting Wu (a.k.a Arthur Wu)]
