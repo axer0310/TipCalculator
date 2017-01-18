@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var mainView: UIView!
+    @IBOutlet var secondView: UIView!
+    @IBOutlet var buttonBar: UIView!
  
     @IBOutlet var underLine1: UIView!
     @IBOutlet var underLine2: UIView!
@@ -27,9 +30,9 @@ class ViewController: UIViewController {
     @IBOutlet var second: UIButton!
     @IBOutlet var third: UIButton!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        billField.becomeFirstResponder()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -39,14 +42,37 @@ class ViewController: UIViewController {
     }
     
 
-    @IBAction func onTap(_ sender: Any)
+    @IBAction func onTap(_ sender: AnyObject)
     {
         view.endEditing(true);
+        UIView.animate(
+            
+            withDuration:0.6,
+            
+            animations:
+            { ()-> Void in
+                self.buttonBar.transform = CGAffineTransform(translationX: 0, y: 0)
+        }
+        )
+       
+    }
+    @IBAction func editing(_ sender: AnyObject)
+    {
+        UIView.animate(
+            
+            withDuration:0.6,
+            
+            animations:
+            { ()-> Void in
+                self.buttonBar.transform = CGAffineTransform(translationX: 0, y: -210)
+        }
+        )
+        
     }
     @IBAction func calTip(_ sender: AnyObject)
     {
+       
         let tipPercent = [0.18,0.2,0.25];
-        
         let bill = Double(billField.text!) ?? 0;
         let tip = bill*tipPercent[tipControl];
         let total = bill + tip;
@@ -127,7 +153,16 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         print("view will appear")
         tipControl = defaults.integer(forKey: "percent");
-    
+        UIView.animate(
+            
+            withDuration: 1,
+            
+            animations:
+            { ()-> Void in
+                self.buttonBar.transform = CGAffineTransform(translationX: 0, y: -210)
+        }
+        )
+        
         calTip(view);
         
 
@@ -139,6 +174,14 @@ class ViewController: UIViewController {
     {
         super.viewDidAppear(animated)
         print("view did appear")
+        
+
+        self.secondView.alpha = 0
+     
+        self.secondView.alpha = 1
+                
+        
+        self.billField.becomeFirstResponder()
         
         if(tipControl == 0)
         {
